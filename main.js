@@ -1,0 +1,37 @@
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = ()=>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+// window.onscroll =()=>{
+//     menu.classList.remove('fa-times');
+//     navbar.classList.remove('active'); 
+//     if(window.scrollY > 60){
+//         document.querySelector('#scroll-top').classList.add('active');
+//     }else{
+//         document.querySelector('#scroll-top').classList.remove('active');
+//     }
+
+// }
+// function loader(){
+//     document.querySelector('.loader-container').classList.add('fade-out');
+// }
+// function fadeout(){
+//     setInterval(loader,3000);
+// }
+document.addEventListener('DOMContentLoaded', function() {
+let orderBtn = document.getElementsByClassName('btn')
+let orderForm = document.getElementById('order')
+
+orderBtn.addEventListener('click',function(){
+    orderForm.scrollIntoView({behavior:'smooth'})
+    console.log("Button clicked");
+
+});
+});
+
+
+
